@@ -1827,7 +1827,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f06e0e;
+  background: #792a24;
 }
 .feed-link,
 .chat {
@@ -3072,8 +3072,12 @@ ul.breadcrumb li+li:last-child {
   }
 }
 .main-inner {
-  background: #fff;
   opacity: 0.9;
+}
+.sidebar-inner,
+.post-block,
+.header-inner {
+  border-radius: 5px !important;
 }
 #animate {
   animation: heartAnimate 1.33s ease-in-out infinite;
@@ -3087,11 +3091,17 @@ ul.breadcrumb li+li:last-child {
 :active {
   cursor: url("/images/blue.cur"), auto !important;
 }
-.post {
-  padding: 5px;
-  padding-top: 0px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+.content {
+  padding: 5px !important;
+  padding-top: 0px !important;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5) !important;
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5) !important;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1200px) {
+  .github-corner {
+    display: none;
+  }
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
